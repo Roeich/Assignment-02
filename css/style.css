@@ -193,3 +193,27 @@ p{
     background: rgb(255, 255, 255);
     margin-bottom: 30px;
 }
+
+.extra-content{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.extra-left{
+    width: 45%;
+}
+.extra-section-title{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+}
+.extra-right{
+    width: 40%;
+}
+.extra-right img{
+    border-radius: 18px;
+    width: 100%;
+}
