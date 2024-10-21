@@ -11,14 +11,34 @@
     padding: 0px;
 }
 body{
+    color: #ffffff;
     font-family: "Inter", sans-serif;
+    background: rgb(0, 0, 0);
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.1;
+    margin-bottom: 0.3em;
+}
+p{
+    margin-bottom: 1.3em;
+    color: rgba(255, 255, 255, 0.5);
+}
+.mr-1{
+    margin-right: 1em;
 }
 .container{
     max-width: 1060px;
     margin: auto;
 }
+.text-light{
+    color: rgba(255, 255, 255, 0.5);
+}
 .header{
     padding: 56px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 .header-navbar{
     display: flex;
@@ -35,11 +55,11 @@ body{
 .header-nav{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
-    padding: 2px;
+    padding: 4px;
     display: flex;
     text-decoration: none;
     list-style-type: none;
-    gap: 20px;
+    gap: 10px;
 }
 .nav-link{
     color: rgb(255, 255, 255);
@@ -52,4 +72,85 @@ body{
 .nav-link:hover,
 .nav-link.active{
     background: rgb(230, 83, 60);
+}
+
+
+.main{}
+.hero-section{
+    padding: 135px 0px 0px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17) 50%,rgba(119, 119, 119, 0) 100%);
+}
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-left{
+    width: 50%;
+}
+.hero-title{
+    font-size: 78px;
+    line-height: 0.9;
+    font-weight: 900;
+}
+.hero-title span{
+    font-size: 1.5em;
+    font-family: "miama";
+    font-weight: 400;
+}
+.btn{
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    display: inline-block;
+}
+.btn-primary{
+    background: rgb(230, 83, 60);
+}
+.btn-outline-light{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.hero-right{
+    width: 40%;
+}
+.hero-imgbox{
+    position: relative;
+}
+.hero-img{
+    width: 100%;
+}
+.hero-card{
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+}
+.hero-card-1{
+    top: 28%;
+    right: -5%;
+}
+.hero-card-2{
+    left: -13%;
+    bottom: 12%;
+}
+.hero-card-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.hero-card-title{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1em;
+}
+.hero-card-2 .hero-card-title{
+    font-size: 24px;
 }
