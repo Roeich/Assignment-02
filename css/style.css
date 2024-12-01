@@ -100,7 +100,9 @@ p {
 .nav-link.active {
     background: rgb(230, 83, 60);
 }
-
+.header-menu-button{
+    display: none;
+}
 
 .main {}
 
@@ -138,6 +140,7 @@ p {
     padding: 16px 40px 16px 40px;
     border-radius: 42px;
     display: inline-block;
+    text-align: center;
 }
 
 .btn-primary {
@@ -476,4 +479,89 @@ select {
 
     padding: 36px 0px;
     text-align: center;
+}
+@media(max-width:575.98px){
+    header,
+    section,
+    footer{
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-menu-button{
+        display: initial;
+        border: none;
+        background-color: transparent;
+    }
+    .hero-content {
+        display: block;
+    }
+    .hero-left ,
+    .hero-right {
+        width: 100%;
+    }
+    .hero-title {
+        font-size: 36px;
+    }
+    .btn {
+        font-size: 11px;
+    }
+    .hero-card-1 {
+        right: 0%;
+    }
+    .hero-card-2 {
+        left: 0%;
+    }
+    .habit-section-title {
+        font-size: 32px;
+    }
+    .habit-list {
+        display: block;
+    }
+    .habit-item {
+        margin: auto;
+    }
+    .extra-content{
+        display: block;
+    }
+    .extra-left,
+    .extra-right{
+        width: 100%;
+    }
+    .extra-left{
+        padding-bottom: 30px;
+    }
+    .extra-left .btn{
+        width: 100%;
+    }
+    .bmi-top-title {
+        font-size: 32px;
+    }
+    .bmi-bottom-content {
+        display: block;
+        padding: 12px;
+    }
+    .bmi-bottom-left,
+    .bmi-bottom-right {
+        width: 100%;
+    }
+    .bmi-bottom-left{
+        margin-bottom: 12px;
+    }
+    .team-section-title {
+        font-size: 32px;
+    }
+    .member-list {
+        grid-template-columns: 1fr;
+    }
+    .footer-top {
+        display: block;
+    }
+    .footer-column-1,
+    .footer-column-2,
+    .footer-column-3{
+        width: 100%;
+    }
 }
